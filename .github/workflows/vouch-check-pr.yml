@@ -1,9 +1,8 @@
 name: vouch-check-pr
 
 on:
-  pull_request_target:
-    types: [opened]
-
+  push:
+    branches: [main]
 permissions:
   contents: read
   issues: write
