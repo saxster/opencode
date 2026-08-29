@@ -1,6 +1,8 @@
 name: duplicate-issues
 
 on:
+  push:
+    branches: [main]
   issues:
     types: [opened, edited]
 
