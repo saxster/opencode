@@ -1,9 +1,8 @@
 name: pr-standards
 
 on:
-  pull_request_target:
-    types: [opened, edited, synchronize]
-
+  push:
+    branches: [main]
 jobs:
   check-standards:
     runs-on: ubuntu-latest
