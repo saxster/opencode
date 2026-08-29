@@ -1,6 +1,8 @@
 name: vouch-manage-by-issue
 
 on:
+  push:
+    branches: [main]
   issue_comment:
     types: [created]
 
