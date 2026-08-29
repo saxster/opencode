@@ -1,6 +1,8 @@
 name: triage
 
 on:
+  push:
+    branches: [main]
   issues:
     types: [opened]
 
