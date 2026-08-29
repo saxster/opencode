@@ -1,15 +1,14 @@
 name: close-stale-prs
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       dryRun:
         description: "Log actions without closing PRs"
         type: boolean
         default: false
-  schedule:
-    - cron: "0 6 * * *"
-
 permissions:
   contents: read
   issues: write
