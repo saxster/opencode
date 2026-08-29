@@ -1,6 +1,8 @@
 name: vouch-check-issue
 
 on:
+  push:
+    branches: [main]
   issues:
     types: [opened]
 
